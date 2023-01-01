@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "lettuce",
+    "image": "https://toppng.com/uploads/preview/romaine-lettuce-png-image-with-transparent-background-green-giant-iceberg-lettuce-11563164071nnwtffk53s.png",
+    "price": 0.5
+  },
+  {
+    "id": 2,
+    "name": "carrot",
+    "image": "https://www.pngfind.com/pngs/m/6-69493_transparent-background-carrot-png-transparent-png-download.png",
+    "price": 0.7
+  },
+  {
+    "id": 3,
+    "name": "banana",
+    "image": "https://www.seekpng.com/png/detail/9-95205_banana-png-picture-transparent-png-3-bananas.png",
+    "price": 0.25
+  }
+]

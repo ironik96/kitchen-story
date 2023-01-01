@@ -2,8 +2,3 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.content {
-  background-color: hsl(240, 100%, 70%);
-  flex-grow: 1;
-}

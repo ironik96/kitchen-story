@@ -1,7 +1,9 @@
 .container {
+  flex-grow: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(330px, 1fr));
+  background-color: bisque;
+  grid-template-columns: repeat(auto-fill, 270px);
+  grid-template-rows: 30px;
   gap: 20px;
   padding: 0 30px;
 }

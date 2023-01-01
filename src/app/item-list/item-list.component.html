@@ -1,8 +1,9 @@
 <div class="container">
-  <app-food-item></app-food-item>
-  <app-food-item></app-food-item>
-  <app-food-item></app-food-item>
-  <app-food-item></app-food-item>
-  <app-food-item></app-food-item>
-  <app-food-item></app-food-item>
+  <app-food-item
+    *ngFor="let item of foodItems"
+    [id]="item.id"
+    [image]="item.image"
+    [name]="item.name"
+    [price]="item.price"
+  ></app-food-item>
 </div>
