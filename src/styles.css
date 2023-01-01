@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap");
+
+:root {
+  --theme-grey: hsl(273, 33%, 94%);
+  --theme-green: hsl(141, 31%, 50%);
+  --theme-black: hsl(0, 0%, 16%);
+  --theme-green-hover: hsl(141, 31%, 40%);
+  --theme-green-active: hsl(141, 31%, 30%);
+
+  --box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
+
+  --font-size: 1.125rem;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
