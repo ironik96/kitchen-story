@@ -1,6 +1,12 @@
 import { Component } from '@angular/core';
 import { FilterItemsService } from '../filter-items.service';
 import FoodItem from '../models/FoodItem';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
+
+interface AppState {
+  message: string;
+}
 
 @Component({
   selector: 'app-item-list',
@@ -9,7 +15,13 @@ import FoodItem from '../models/FoodItem';
 })
 export class ItemListComponent {
   foodItems!: FoodItem[];
-  constructor(private searchService: FilterItemsService) {}
+  message$: Observable<string>;
+  constructor(
+    private searchService: FilterItemsService,
+    private store: Store<AppState>
+  ) {
+    this.message$ = this.store.select('message');
+  }
   ngOnInit() {
     this.foodItems = this.searchService.foodItems;
   }

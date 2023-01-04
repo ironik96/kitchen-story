@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import { FoodItemComponent } from './food-item/food-item.component';
 import { FormsModule } from '@angular/forms';
+import { StoreModule } from '@ngrx/store';
+import { stateReducer } from './state.reducer';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,14 @@ import { FormsModule } from '@angular/forms';
     ItemListComponent,
     FoodItemComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    StoreModule.forRoot({
+      message: stateReducer,
+    }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

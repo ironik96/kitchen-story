@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { FilterItemsService } from '../filter-items.service';
-
+import { Store } from '@ngrx/store';
+interface AppState {
+  message: string;
+}
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -8,8 +10,8 @@ import { FilterItemsService } from '../filter-items.service';
 })
 export class NavbarComponent {
   query!: string;
-  constructor(private searchService: FilterItemsService) {}
-  filterFoodItems() {
-    this.searchService.filterFoodItems(this.query);
+  constructor(private store: Store<AppState>) {}
+  changeState() {
+    this.store.dispatch({ type: 'FILTER' });
   }
 }
