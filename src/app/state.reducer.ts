@@ -10,3 +10,8 @@ export function stateReducer(state: string = 'query', action: Action) {
       return state;
   }
 }
+
+export class FoodItemsReducer implements Action {
+  readonly type = FILTER;
+  constructor(public payload: string) {}
+}
