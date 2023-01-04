@@ -2,13 +2,49 @@
   {
     "id": 1,
     "name": "lettuce",
-    "image": "https://toppng.com/uploads/preview/romaine-lettuce-png-image-with-transparent-background-green-giant-iceberg-lettuce-11563164071nnwtffk53s.png",
+    "image": "https://cdn.britannica.com/77/170677-050-F7333D51/lettuce.jpg",
     "price": 0.5
   },
   {
     "id": 2,
     "name": "carrot",
-    "image": "https://www.pngfind.com/pngs/m/6-69493_transparent-background-carrot-png-transparent-png-download.png",
+    "image": "https://www.pngall.com/wp-content/uploads/2016/04/Carrot-Download-PNG.png",
+    "price": 0.7
+  },
+  {
+    "id": 3,
+    "name": "banana",
+    "image": "https://www.seekpng.com/png/detail/9-95205_banana-png-picture-transparent-png-3-bananas.png",
+    "price": 0.25
+  },
+  {
+    "id": 1,
+    "name": "lettuce",
+    "image": "https://cdn.britannica.com/77/170677-050-F7333D51/lettuce.jpg",
+    "price": 0.5
+  },
+  {
+    "id": 2,
+    "name": "carrot",
+    "image": "https://www.pngall.com/wp-content/uploads/2016/04/Carrot-Download-PNG.png",
+    "price": 0.7
+  },
+  {
+    "id": 3,
+    "name": "banana",
+    "image": "https://www.seekpng.com/png/detail/9-95205_banana-png-picture-transparent-png-3-bananas.png",
+    "price": 0.25
+  },
+  {
+    "id": 1,
+    "name": "lettuce",
+    "image": "https://cdn.britannica.com/77/170677-050-F7333D51/lettuce.jpg",
+    "price": 0.5
+  },
+  {
+    "id": 2,
+    "name": "carrot",
+    "image": "https://www.pngall.com/wp-content/uploads/2016/04/Carrot-Download-PNG.png",
     "price": 0.7
   },
   {

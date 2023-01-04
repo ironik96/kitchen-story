@@ -2,3 +2,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+app-item-list {
+  flex-grow: 1;
+}
