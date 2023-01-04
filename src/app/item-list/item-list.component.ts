@@ -1,12 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import foodItems from 'src/assets/json/food-items.json';
-
-interface FoodItem {
-  id: number;
-  name: string;
-  image: string;
-  price: number;
-}
+import { Component } from '@angular/core';
+import { FilterItemsService } from '../filter-items.service';
+import FoodItem from '../models/FoodItem';
 
 @Component({
   selector: 'app-item-list',
@@ -14,8 +8,9 @@ interface FoodItem {
   styleUrls: ['./item-list.component.css'],
 })
 export class ItemListComponent {
-  foodItems: FoodItem[] = foodItems;
+  foodItems!: FoodItem[];
+  constructor(private searchService: FilterItemsService) {}
   ngOnInit() {
-    console.log(foodItems);
+    this.foodItems = this.searchService.foodItems;
   }
 }
