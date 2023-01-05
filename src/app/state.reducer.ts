@@ -1,4 +1,5 @@
 import { Action } from '@ngrx/store';
+import { FoodItemState } from './models/FoodItemsState';
 
 export const FILTER = 'FILTER';
 
@@ -13,5 +14,5 @@ export function stateReducer(state: string = 'query', action: Action) {
 
 export class FoodItemsReducer implements Action {
   readonly type = FILTER;
-  constructor(public payload: string) {}
+  constructor(public payload: FoodItemState) {}
 }
