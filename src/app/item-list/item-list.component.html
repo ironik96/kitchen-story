@@ -1,10 +1,9 @@
 <div class="container">
   <app-food-item
-    *ngFor="let item of foodItems"
+    *ngFor="let item of foodItems.foodItems"
     [id]="item.id"
     [image]="item.image"
     [name]="item.name"
     [price]="item.price"
   ></app-food-item>
-  <p>{{ message$ | async }}</p>
 </div>

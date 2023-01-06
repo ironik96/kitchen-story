@@ -7,7 +7,8 @@
       name="search"
       id="search-box"
       placeholder="search"
-      (ngModelChange)="changeState()"
+      #search
+      (ngModelChange)="changeState(search.value)"
     />
     <svg
       width="50"

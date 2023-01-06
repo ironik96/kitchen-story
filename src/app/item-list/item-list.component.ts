@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import FoodItem from '../models/FoodItem';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { FoodItemState,SELECTOR } from '../models/FoodItemsState';
+import { AppState } from '../food-items-store/food-items.state';
+import FoodItem from '../models/FoodItem';
 
 @Component({
   selector: 'app-item-list',
@@ -10,13 +10,11 @@ import { FoodItemState,SELECTOR } from '../models/FoodItemsState';
   styleUrls: ['./item-list.component.css'],
 })
 export class ItemListComponent {
-  foodItems!: FoodItem[];
-  message$: Observable<FoodItemState>;
-  constructor(private store: Store<FoodItemState>) {
-    this.message$ = this.store.select(SELECTOR);
-  }
+  foodItems$: Observable<FoodItem[]> = this.store.select('foodItems');
+  foodItems!: any;
+  constructor(private store: Store<AppState>) {}
+
   ngOnInit() {
-    // this.foodItems = this.searchService.foodItems;
-    this.foodItems = [];
+    this.foodItems$.subscribe((foodItems) => (this.foodItems = foodItems));
   }
 }
