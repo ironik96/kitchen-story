@@ -1,7 +1,14 @@
 <div class="nav">
   <h1 class="nav-leading">Kitchen Story</h1>
   <div class="nav-trailing">
-    <input type="text" name="search" id="search-box" placeholder="search" />
+    <input
+      [(ngModel)]="query"
+      type="text"
+      name="search"
+      id="search-box"
+      placeholder="search"
+      (ngModelChange)="searchFoodItems()"
+    />
     <svg
       width="50"
       height="50"
