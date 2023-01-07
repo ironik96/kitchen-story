@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { AppStateService } from '../services/app-state.service';
 
 @Component({
   selector: 'app-food-item',
@@ -10,4 +11,10 @@ export class FoodItemComponent {
   @Input() image = '';
   @Input() name = '';
   @Input() price!: number;
+
+  constructor(private stateService: AppStateService) {}
+
+  addItemToCart() {
+    this.stateService.addToCart(this.id);
+  }
 }

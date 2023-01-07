@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import { FoodItemComponent } from './food-item/food-item.component';
 import { FormsModule } from '@angular/forms';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { CartItemComponent } from './cart-item/cart-item.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     ItemListComponent,
     FoodItemComponent,
+    CheckoutComponent,
+    CartItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

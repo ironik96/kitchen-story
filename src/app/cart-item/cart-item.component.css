@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  gap: 20px;
+  font-size: var(--font-size-normal);
+  font-weight: bold;
+  color: var(--theme-black);
+}
+img {
+  object-fit: cover;
+  width: 200px;
+}
+.name {
+  font-size: var(--font-size-large);
+}
+.qty-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.qty-container > button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: var(--theme-green);
+  border: 1px solid var(--theme-green);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: var(--font-size-normal);
+  font-weight: bold;
+}
+
+.qty-container > button:hover {
+  background-color: var(--theme-green);
+  color: white;
+}
+.qty-container > button:active {
+  background-color: var(--theme-green-active);
+  border-color: var(--theme-green-active);
+  color: white;
+}

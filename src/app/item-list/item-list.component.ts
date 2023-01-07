@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
 import { FoodItem } from '../models/food-item.model';
 import { AppStateService } from '../services/app-state.service';
 

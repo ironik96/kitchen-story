@@ -1,0 +1,7 @@
+<h1>Order Summary</h1>
+<app-cart-item
+  *ngFor="let cartItem of cart"
+  [cartItem]="cartItem"
+></app-cart-item>
+<p>Total: {{ totalPrice }} kwd</p>
+<button>Checkout</button>

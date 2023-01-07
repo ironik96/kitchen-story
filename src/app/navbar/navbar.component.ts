@@ -8,7 +8,10 @@ import { AppStateService } from '../services/app-state.service';
 })
 export class NavbarComponent {
   query!: string;
-  constructor(private stateService: AppStateService) {}
+  cartLength!: number;
+  constructor(private stateService: AppStateService) {
+    this.stateService.cart.subscribe((cart) => (this.cartLength = cart.length));
+  }
   searchFoodItems() {
     this.stateService.searchFoodItems(this.query);
   }

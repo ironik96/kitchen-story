@@ -1,0 +1,10 @@
+<img src="{{ image }}" alt="ingredient image" />
+<div class="details">
+  <p class="name">{{ name }}</p>
+  <p class="price">{{ price }} kwd</p>
+  <div class="qty-container">
+    <button (click)="decrementQty()"><span>-</span></button>
+    <p class="qty">{{ qty }}</p>
+    <button (click)="incrementQty()"><span>+</span></button>
+  </div>
+</div>

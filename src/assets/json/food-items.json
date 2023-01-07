@@ -1,55 +1,55 @@
 [
   {
     "id": 1,
-    "name": "lettuce",
+    "name": "lettuce egyption",
     "image": "https://cdn.britannica.com/77/170677-050-F7333D51/lettuce.jpg",
     "price": 0.5
   },
   {
     "id": 2,
-    "name": "carrot",
+    "name": "carrot egyption",
     "image": "https://www.pngall.com/wp-content/uploads/2016/04/Carrot-Download-PNG.png",
     "price": 0.7
   },
   {
     "id": 3,
-    "name": "banana",
+    "name": "banana egyption",
     "image": "https://www.seekpng.com/png/detail/9-95205_banana-png-picture-transparent-png-3-bananas.png",
     "price": 0.25
   },
   {
-    "id": 1,
-    "name": "lettuce",
+    "id": 4,
+    "name": "lettuce Kuwaiti",
     "image": "https://cdn.britannica.com/77/170677-050-F7333D51/lettuce.jpg",
     "price": 0.5
   },
   {
-    "id": 2,
-    "name": "carrot",
+    "id": 5,
+    "name": "carrot Kuwaiti",
     "image": "https://www.pngall.com/wp-content/uploads/2016/04/Carrot-Download-PNG.png",
     "price": 0.7
   },
   {
-    "id": 3,
-    "name": "banana",
+    "id": 5,
+    "name": "banana Kuwaiti",
     "image": "https://www.seekpng.com/png/detail/9-95205_banana-png-picture-transparent-png-3-bananas.png",
     "price": 0.25
   },
   {
-    "id": 1,
-    "name": "lettuce",
+    "id": 6,
+    "name": "lettuce Indian",
     "image": "https://cdn.britannica.com/77/170677-050-F7333D51/lettuce.jpg",
     "price": 0.5
   },
   {
-    "id": 2,
-    "name": "carrot",
+    "id": 7,
+    "name": "carrot Indian",
     "image": "https://www.pngall.com/wp-content/uploads/2016/04/Carrot-Download-PNG.png",
     "price": 0.7
   },
   {
-    "id": 3,
-    "name": "banana",
+    "id": 8,
+    "name": "banana Indian",
     "image": "https://www.seekpng.com/png/detail/9-95205_banana-png-picture-transparent-png-3-bananas.png",
     "price": 0.25
   }

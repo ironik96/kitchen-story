@@ -3,6 +3,6 @@ body {
   flex-direction: column;
 }
 
-app-item-list {
+body > *:last-child {
   flex-grow: 1;
 }
